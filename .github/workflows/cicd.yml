@@ -1,19 +1,17 @@
 name: flask-pipeline
-
+ 
 on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
-
+  
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.9
       uses: actions/setup-python@v3
       with:
         python-version: 3.9
-    - name: Test workflow
-      run: echo "Workflow triggered successfully!"
