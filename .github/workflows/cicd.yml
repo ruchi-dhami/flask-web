@@ -15,3 +15,5 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: 3.9
+    - name: Test workflow
+      run: echo "Workflow triggered successfully!"
