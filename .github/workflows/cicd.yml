@@ -52,7 +52,7 @@ jobs:
         docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-pipeline:${{github.sha}} .
         docker push ${{ secrets.DOCKER_USERNAME }}/flask-pipeline:${{github.sha}}
       
-    - name: Deploy Container APP
+    - name: Deploy Container APP1
       uses: azure/webapps-deploy@v2
       with: 
         app-name: 'flask-app1'
