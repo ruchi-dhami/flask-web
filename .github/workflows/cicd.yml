@@ -55,6 +55,6 @@ jobs:
     - name: Deploy Container App
       uses: azure/webapps-deploy@v2
       with: 
-        app-name: 'ruchi'
+        app-name: 'flask-app1'
         public-profile: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE}}
         images: '${{secrets.DOCKER_USERNAME }}/flask-pipeline:${{github.sha}}'
